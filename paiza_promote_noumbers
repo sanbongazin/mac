@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(void){
+    // 自分の得意な言語で
+    // Let's チャレンジ！！
+    char str[1000];
+    fgets(str, sizeof(str), stdin);
+    int i, d[2] ;
+    i = 0;
+    while(i <=2){
+        scanf("%d" , &d[i]);
+        i++;
+    }
+    
+    if(d[0] == d[1]){
+        printf("eq");
+    }else if(d[0] < d[1]){
+        printf("%d", d[0]);
+    }else{
+        printf("%d", d[1]);
+    }
+    return 0;
+}
